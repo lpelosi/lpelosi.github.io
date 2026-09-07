@@ -69,6 +69,15 @@ figure.map img{display:block;max-width:100%;height:auto;image-rendering:pixelate
 .char .facts{background:#fff;border-radius:12px;padding:8px 12px;border:2px solid var(--gold);font-family:Arial,Helvetica,sans-serif;font-size:14px}
 .char .facts b{color:var(--blue-d)}
 @media(max-width:700px){.char{grid-template-columns:1fr}}
+.type{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;color:#fff;padding:1px 6px;border-radius:8px;margin-left:4px;vertical-align:middle;text-shadow:0 1px 0 rgba(0,0,0,.3);letter-spacing:.3px}
+.t-normal{background:#a8a878}.t-fighting{background:#c03028}.t-flying{background:#a890f0}.t-poison{background:#a040a0}.t-ground{background:#e0c068;color:#333;text-shadow:none}.t-rock{background:#b8a038}.t-bug{background:#a8b820}.t-ghost{background:#705898}.t-steel{background:#b8b8d0;color:#333;text-shadow:none}.t-fire{background:#f08030}.t-water{background:#6890f0}.t-grass{background:#78c850}.t-electric{background:#f8d030;color:#333;text-shadow:none}.t-psychic{background:#f85888}.t-ice{background:#98d8d8;color:#333;text-shadow:none}.t-dragon{background:#7038f8}.t-dark{background:#705848}.t-fairy{background:#ee99ac;color:#333;text-shadow:none}.t-stellar{background:#40b5a5}
+.team{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}
+.mon{background:#fff;border:2px solid var(--blue);border-radius:10px;padding:4px 6px;width:118px;text-align:center;font-family:Arial,Helvetica,sans-serif}
+.mon img{image-rendering:pixelated;width:64px;height:64px;display:block;margin:0 auto}
+.mon .nosprite{height:64px}
+.mon .mn{font-weight:bold;font-size:12px;line-height:1.1}.mon .mn small{font-weight:normal;font-size:10px}
+.mon .ml{font-size:12px;color:#444}.mon .mt .type{margin:2px 1px 0}.mon .item{font-size:10px;color:#7a5a00;margin-top:2px;font-style:italic}
+.difflabel{font-family:"Arial Black",Impact,sans-serif;color:var(--orange);font-size:12px;margin-top:6px;letter-spacing:.5px}
 .pagenum{position:absolute;left:18px;bottom:14px;width:42px;height:42px;border-radius:50%;background:var(--orange);color:#fff;font-weight:bold;font-family:Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 0 #a63e12}
 .toc{columns:2;column-gap:30px;font-size:16px;list-style:none;padding-left:0}
 .toc a{text-decoration:none}
