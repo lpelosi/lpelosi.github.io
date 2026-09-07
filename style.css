@@ -63,6 +63,10 @@ h2.sub{font-family:"Arial Black",Impact,sans-serif;font-size:24px;color:var(--bl
 .stepnav a{background:var(--blue);color:#fff;text-decoration:none;padding:8px 14px;border-radius:12px;border-bottom:3px solid var(--gold)}
 .stepnav a.next{background:var(--orange);border-bottom-color:#a63e12}
 .stepnav .pos{font-size:13px;color:#555}
+.req{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:4px 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+.tag{background:var(--blue);color:#fff;font-weight:bold;padding:3px 10px;border-radius:12px}
+.tag.lv{background:var(--gold);color:#333}.tag.post{background:var(--orange)}
+.reqnote{color:#555}
 .chapter{font-family:"Arial Black",Impact,sans-serif;color:var(--orange);margin:18px 0 6px;font-size:18px}
 figure.map{margin:12px 0;background:var(--blue);border-radius:14px;padding:6px;display:inline-block;max-width:100%}
 figure.map img{display:block;max-width:100%;height:auto;image-rendering:pixelated;border-radius:8px}
