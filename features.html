@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Features · Pokémon Emma's Emerald</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><div class="page">
+<header class="top"><div class="logo">Pokémon<small>EMMA'S EMERALD</small></div><div class="prima"><span>OFFICIAL</span> Strategy Guide</div></header>
+<nav class="tabs"><a href="index.html" class="">Contents</a><a href="start.html" class="">Getting Started</a><a href="walkthrough.html" class="">Walkthrough</a><a href="gyms.html" class="">Gym Battles</a><a href="family.html" class="">The Family</a><a href="league.html" class="">Pokémon League</a><a href="legendaries.html" class="">Legendaries</a><a href="features.html" class="cur">Features</a><a href="changelog.html" class="">Change Log</a></nav>
+<h1 class="sec">Features</h1><div class="prose"><h2>More Radical Red quality of life (2026-09-06)</h2><ul>
+<li><b>PokéVial</b> key item, given with your starter (or from EXTRAS on older saves): fully heals the party anywhere. 3 charges, refilled every time a Pokémon Center nurse heals you. Register it to SELECT.</li>
+<li><b>Infinite Repel</b> toggle in EXTRAS: wild Pokémon below your lead's level stay away forever, no items needed.</li>
+<li><b>Easy catch</b> toggle in EXTRAS: every wild Pokémon has a catch rate of 255 (Magikarp odds), legendaries included.</li>
+<li><b>Auto-run</b> toggle in EXTRAS: run by default, hold B to walk. Works before you get the Running Shoes.</li>
+<li><b>DexNav</b>: running or biking near your target no longer ends the search.</li>
+<li><b>Move Relearner everywhere</b>: open a Pokémon's summary, Moves page, and relearn any level-up move (including pre-evolution moves), egg move or TM move it can learn. No Heart Scales, no trip to Fallarbor. Natures and abilities change with Mints and Ability Capsules/Patches sold in marts.</li>
+<li><b>Faster battles</b>: the trainer slide-in at the start of a battle is skipped. <b>Instant text</b> toggle in EXTRAS.</li>
+<li><b>Retry after a loss</b>: after the nurse heals you following a white-out, she offers to send you straight back to the spot where the lost trainer battle began.</li>
+<li><b>EV training</b>: Mauville Mart (3rd badge) sells the six vitamins, the six Power items and the six EV-reducing berries (Pomeg, Kelpsy, Qualot, Hondew, Grepa, Tamato). Bottle Caps for IVs were already in stock.</li>
+<li><b>Eggs hatch 4x faster.</b> Egg moves can be relearned from the summary screen.</li>
+<li><b>Last-used Ball</b>: press R in a wild battle to throw the last Ball you used; hold R and press a direction to cycle Balls. (This was already on; documenting it.)</li>
+<li><b>Wild double battles</b> toggle in EXTRAS: every grass and surf encounter is a double battle. Faster EXP on Hard.</li>
+<li><b>Easy mode</b>: every badge comes with 5 Rare Candies so a small team keeps pace with the cap.</li>
+</ul><h2>Terastallization</h2><ul>
+<li>Opponents Terastallize only on <b>Hard</b>, and only once you hold all 8 badges (Elite Four, Champion, the family finals). Never on Easy or Normal, never in wild battles. You can still Terastallize yourself on any difficulty. Before this, every boss with smart AI could Tera from the first gym. You receive the <b>Tera Orb</b> with the Rain Badge in Sootopolis; it recharges whenever your Pokémon are healed.</li>
+</ul><h2>Hidden difficulty settings reviewed (2026-09-06)</h2><p>The expansion ships several modern mechanics that quietly make the game harder than Emerald. After the Tera surprise, every battle/AI setting was audited. Changed:</p>
+<ul>
+<li><b>Wild Pokémon AI</b>: vanilla random moves on Easy, "avoid useless moves" on Normal; the expansion's smart, level-scaled wild AI is Hard-only.</li>
+<li><b>Obedience</b>: back to the classic rule (only traded Pokémon can disobey). The Legends Arceus rule that your own catches disobey above their met level is off.</li>
+<li><b>Badge stat boosts</b> (+10% to Attack/Defense/Speed/Sp. stats as you earn badges) are back, as in Emerald.</li>
+<li><b>Trainer battles give 1.5x experience</b> again, as in Emerald.</li>
+<p>Checked and left alone: no trainer holds Mega Stones or Z-Crystals; Dynamax is off; critical hits use the gentler 1.5x; the hard level cap stays (toggle in EXTRAS on Easy/Normal).</p>
+</ul><h2>Trainers</h2><ul>
+<li>848 trainers rebalanced. Levels pulled toward the badge cap (bosses at the cap, others halfway). Bigger teams: gym leaders 4 at gym 1 growing to 6, Elite Four / Champion / Archie / Maxie 6, rival one more than vanilla, grunts 2–3, everyone else 2–4.</li>
+<li>Vanilla Pokémon and their movesets kept; added Pokémon are themed by trainer class (Hikers Rock/Ground, Kindlers Fire, Psychics Psychic...) and gyms/E4 by their dominant type. Strength gated by level.</li>
+<li>Bosses: held items (Eviolite on unevolved, competitive items later), natures and EVs from real base stats, and "Smart Trainer / Ace Pokémon" AI. All trainers have 31 IVs.</li>
+</ul><h2>Difficulty and progression</h2><ul>
+<li><b>Gym Leaders and Elite Four have hand-built teams</b> on both difficulties (same species and moves; Hard adds held items, natures and EV spreads and runs at the badge cap, Normal sits two levels lower with no items). Themed and fair: Roxanne runs Geodude / Rolycoly / Larvitar / Nosepass, Winona six birds with Altaria as ace, Drake ends on Salamence, and so on. Full lists in <code>dev_scripts/trainers/boss_sets.py</code>.</li>
+<li><b>Level cap can be lifted on Normal.</b> After a white-out the Pokémon Center nurse offers to switch it off; it is also a toggle in EXTRAS. Hard keeps the cap always.</li>
+<li>Level cap by badge: 15 / 19 / 24 / 29 / 31 / 33 / 42 / 46, then 58 until Champion. Hard EXP cap. Rare Candies obey it.</li>
+<li>Type icons and move effectiveness always shown in battle.</li>
+<li>Party-wide EXP share from the start.</li>
+</ul><h2>Evolution and items</h2><ul>
+<li>Trade evolutions replaced: Kadabra, Machoke, Graveler (both), Haunter, Boldore, Gurdurr, Phantump, Pumpkaboo at Lv37; Karrablast and Shelmet at Lv35. Held-item trade evolutions (Scizor, Steelix, Kingdra, Porygon2/Z, Rhyperior, Electivire, Magmortar, Dusknoir, Milotic, Slowking, Politoed, Huntail, Gorebyss, Aromatisse, Slurpuff) use the item from the bag. Linking Cord sold as well.</li>
+<li>Reusable TMs.</li>
+<li>Marts by town: modern Poké Balls everywhere; Rustboro/Verdanturf evolution stones; Slateport/Fallarbor/Fortree held evolution items; Mauville/Lavaridge competitive items; Lilycove 3F all 21 Mints, vitamins, Ability Capsule/Patch, Bottle Caps, Exp Candies; Mossdeep, Sootopolis and the League counter carry everything.</li>
+</ul><h2>Field moves without HMs</h2><ul>
+<li>You receive the <b>Field Case</b> key item with your starter (older saves: open EXTRAS once). Register it to SELECT.</li>
+<li>It lists every field move you have unlocked and uses it on the spot with your lead Pokémon as the "user", no move slot needed: Cut, Rock Smash, Strength, Surf, Waterfall, Dive, Fly, Flash, Defog, Sweet Scent, plus one escape move.</li>
+<li>Unlocks follow the badges exactly as before (Cut after badge 1, Flash 2, Rock Smash 3, Strength 4, Surf 5, Fly 6, Dive 7, Waterfall 8). The HM discs still exist if you want the moves in battle.</li>
+<li>Escape move: <b>Dig</b> if your lead Pokémon can learn Dig, otherwise <b>Teleport</b> (works outdoors, back to the last Pokémon Center). Dig works inside caves and buildings that allow Escape Ropes.</li>
+</ul><h2>Interface</h2><ul>
+<li>Summary screen IV/EV page with numbers.</li>
+<li>Move relearner in the summary screen (expansion default).</li>
+<li>Follower Pokémon on. Species that can follow show a <code>+</code> after their name in the starter list and summary screen.</li>
+<li>DexNav unlocked with your starter (or from EXTRAS on older saves). Shows the area's Pokémon for the current time of day. <b>Levels</b>: DexNav Pokémon use the area's normal level range. The ORAS-style 4% chance of a +10 level surprise is gone (that was the Lv13 Bulbasaur on Route 101); chaining still adds up to +5, never above your level cap. <b>Sneaking simplified</b>: once a Pokémon is found, just walk up to it. Running or biking nearby still scares it off; the vanilla hold-A creep step is gone.</li>
+<li>Start menu fits 9 entries.</li>
+</ul><h2>Wild Pokémon</h2><ul>
+<li>Every Hoenn area has four encounter tables: Morning, Day, Evening, Night (real-time clock).</li>
+<li>All 449 non-legendary families are catchable before the postgame. Vanilla natives keep the two 20% slots; the other ten slots are Gen 1–9 Pokémon themed by biome (forest, cave, volcano, graveyard, ice, sea, desert...) and gated by strength so early routes stay early.</li>
+<li>Regional forms appear (Alolan Rattata, Hisuian Zorua, Paldean Tauros...). Evolved stages show up once the route level passes the evolution level.</li>
+<li>Surfing, fishing (per rod) and Rock Smash tables expanded the same way.</li>
+<li>Feebas, Mirage Island and Altering Cave untouched.</li>
+</ul></div>
+<div class="pagenum">124</div>
+<footer>Pokémon Emma's Emerald is a fan-made ROM hack built on pokeemerald-expansion. Requires your own copy of Pokémon Emerald. Not affiliated with Nintendo, Game Freak or The Pokémon Company.</footer>
+</div></div></body></html>

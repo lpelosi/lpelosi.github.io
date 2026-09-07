@@ -1,0 +1,161 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Change Log · Pokémon Emma's Emerald</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><div class="page">
+<header class="top"><div class="logo">Pokémon<small>EMMA'S EMERALD</small></div><div class="prima"><span>OFFICIAL</span> Strategy Guide</div></header>
+<nav class="tabs"><a href="index.html" class="">Contents</a><a href="start.html" class="">Getting Started</a><a href="walkthrough.html" class="">Walkthrough</a><a href="gyms.html" class="">Gym Battles</a><a href="family.html" class="">The Family</a><a href="league.html" class="">Pokémon League</a><a href="legendaries.html" class="">Legendaries</a><a href="features.html" class="">Features</a><a href="changelog.html" class="cur">Change Log</a></nav>
+<h1 class="sec">Change Log</h1><div class="prose"><p>Everything that differs from stock pokeemerald-expansion 1.17.1, grouped by area. Kept up to date as the hack grows; this is the source for the eventual website.</p>
+<h2>Game start</h2>
+<ul>
+<li><b>Difficulty choice</b> right after the skip-intro question (in the moving truck).</li>
+<li><b>Normal</b>: trainers keep their vanilla Pokémon plus a themed extra or two, bosses get a modest level bump and the smart AI. No held items or EV spreads on regular trainers.</li>
+<li><b>Hard</b>: the Radical Red treatment. Levels at the badge cap, full teams, held items, natures/EVs, Ace Pokémon AI.</li>
+<li>Every trainer has both versions; the game picks by your choice. Stored in the save, not changeable later (yet).</li>
+<li><b>Randomizer</b> (asked after difficulty): Off / Wild Pokémon / Wild + trainers. Every species is swapped for a species of similar base stat total, and the swap is fixed per save (Zigzagoon is always the same thing on your file), so routes stay learnable. Legendaries, the Champions Colin/Emma, and scripted static Pokémon are never swapped. Randomized trainer Pokémon use their level-up moves. DexNav and the Pokédex area list still show the original species.</li>
+<li><b>RANDOM / RANDOM+ starters</b> at the top of the type list: RANDOM rolls any eligible starter, RANDOM+ rolls only species that can follow you. Say No at the confirmation to reroll.</li>
+<li><b>Badge-gated party size.</b> Hard mode always: 3 slots to start, +1 per badge (6 after the 3rd badge). Normal mode offers it as an optional challenge: 4 slots, +1 per badge (6 after the 2nd). Extra catches and gifts go to the PC, the PC refuses withdrawals into locked slots, and locked slots read "LOCKED: earn a BADGE" in the party menu.</li>
+<li><b>Skip intro prompt</b> in the moving truck. Yes applies every intro flag (house, clock, met rival) and warps you to Route 101, straight into the Birch rescue and starter choice.</li>
+<li><b>Any-Pokémon starter.</b> Type menu → species menu with live icon preview → confirm. Eligible: every enabled species that is the root of its evolutionary line (Charmander yes, Charizard no; Pichu yes, Pikachu no), including regional root forms (Alolan Vulpix). No megas, Gigantamax, Tera or Totem forms. Legendaries/mythicals/Ultra Beasts/Paradox are offered too (<code>include/config/starter_select.h</code> toggles).</li>
+<li><b>Shiny starter</b> yes/no prompt.</li>
+<li>Starters with no move that can hit a Normal type (Abra, Gastly, Vanillite...) are taught Tackle so the forced Zigzagoon fight is winnable.</li>
+<li>Rival still picks the Hoenn starter that counters your first type.</li>
+<li>Default battle style is SET.</li>
+</ul>
+<h2>Wild Pokémon</h2>
+<ul>
+<li>Every Hoenn area has four encounter tables: Morning, Day, Evening, Night (real-time clock).</li>
+<li>All 449 non-legendary families are catchable before the postgame. Vanilla natives keep the two 20% slots; the other ten slots are Gen 1–9 Pokémon themed by biome (forest, cave, volcano, graveyard, ice, sea, desert...) and gated by strength so early routes stay early.</li>
+<li>Regional forms appear (Alolan Rattata, Hisuian Zorua, Paldean Tauros...). Evolved stages show up once the route level passes the evolution level.</li>
+<li>Surfing, fishing (per rod) and Rock Smash tables expanded the same way.</li>
+<li>Feebas, Mirage Island and Altering Cave untouched.</li>
+</ul>
+<h2>Legendaries</h2>
+<ul>
+<li>112 static encounters added (see LEGENDARIES.md). Unlock tiers: 6 badges → sub-legendaries (Lv50); 8 badges → Ultra Beasts and Paradox (Lv55); Champion → box legendaries (Lv70) and mythicals (Lv65). Cosmog Lv30, Kubfu Lv40, Type: Null Lv45, Poipole Lv45.</li>
+<li>Walk up and press A. Caught = removed permanently. Fainted or fled = flies away and returns when you re-enter the map.</li>
+<li>Vanilla events (Regis, Kyogre, Groudon, Rayquaza, Latis, Mew, Deoxys, Lugia, Ho-Oh) unchanged.</li>
+<li>Arceus, Genesect, Silvally and Ogerpon have no overworld sprite yet and appear as the substitute doll.</li>
+</ul>
+<h2>Title</h2>
+<ul>
+<li>The game is <b>Pokémon Emma's Emerald</b>: new title-screen banner ("EMMA'S EMERALD" replaces "EMERALD VERSION") and ROM header title <code>POKEMON EMMA</code>. Vanillite replaces Rayquaza behind the logo. Game code stays BPEE so emulators keep RTC and save-type detection.</li>
+</ul>
+<h2>More Radical Red quality of life (2026-09-06)</h2>
+<ul>
+<li><b>PokéVial</b> key item, given with your starter (or from EXTRAS on older saves): fully heals the party anywhere. 3 charges, refilled every time a Pokémon Center nurse heals you. Register it to SELECT.</li>
+<li><b>Infinite Repel</b> toggle in EXTRAS: wild Pokémon below your lead's level stay away forever, no items needed.</li>
+<li><b>Easy catch</b> toggle in EXTRAS: every wild Pokémon has a catch rate of 255 (Magikarp odds), legendaries included.</li>
+<li><b>Auto-run</b> toggle in EXTRAS: run by default, hold B to walk. Works before you get the Running Shoes.</li>
+<li><b>DexNav</b>: running or biking near your target no longer ends the search.</li>
+<li><b>Move Relearner everywhere</b>: open a Pokémon's summary, Moves page, and relearn any level-up move (including pre-evolution moves), egg move or TM move it can learn. No Heart Scales, no trip to Fallarbor. Natures and abilities change with Mints and Ability Capsules/Patches sold in marts.</li>
+<li><b>Faster battles</b>: the trainer slide-in at the start of a battle is skipped. <b>Instant text</b> toggle in EXTRAS.</li>
+<li><b>Retry after a loss</b>: after the nurse heals you following a white-out, she offers to send you straight back to the spot where the lost trainer battle began.</li>
+<li><b>EV training</b>: Mauville Mart (3rd badge) sells the six vitamins, the six Power items and the six EV-reducing berries (Pomeg, Kelpsy, Qualot, Hondew, Grepa, Tamato). Bottle Caps for IVs were already in stock.</li>
+<li><b>Eggs hatch 4x faster.</b> Egg moves can be relearned from the summary screen.</li>
+<li><b>Last-used Ball</b>: press R in a wild battle to throw the last Ball you used; hold R and press a direction to cycle Balls. (This was already on; documenting it.)</li>
+<li><b>Wild double battles</b> toggle in EXTRAS: every grass and surf encounter is a double battle. Faster EXP on Hard.</li>
+<li><b>Easy mode</b>: every badge comes with 5 Rare Candies so a small team keeps pace with the cap.</li>
+</ul>
+<h2>Encounter guide</h2>
+<ul>
+<li><code>docs/ENCOUNTERS.md</code> lists every wild Pokémon by area, method (walking, surfing, Rock Smash, each rod), level range and chance per time of day (Morning 6–10, Day 10–19, Evening 19–20, Night 20–6). Wild levels are the same on all difficulties.</li>
+</ul>
+<h2>Hidden difficulty settings reviewed (2026-09-06)</h2>
+<p>The expansion ships several modern mechanics that quietly make the game harder than Emerald. After the Tera surprise, every battle/AI setting was audited. Changed:</p>
+<ul>
+<li><b>Wild Pokémon AI</b>: vanilla random moves on Easy, "avoid useless moves" on Normal; the expansion's smart, level-scaled wild AI is Hard-only.</li>
+<li><b>Obedience</b>: back to the classic rule (only traded Pokémon can disobey). The Legends Arceus rule that your own catches disobey above their met level is off.</li>
+<li><b>Badge stat boosts</b> (+10% to Attack/Defense/Speed/Sp. stats as you earn badges) are back, as in Emerald.</li>
+<li><b>Trainer battles give 1.5x experience</b> again, as in Emerald.</li>
+<p>Checked and left alone: no trainer holds Mega Stones or Z-Crystals; Dynamax is off; critical hits use the gentler 1.5x; the hard level cap stays (toggle in EXTRAS on Easy/Normal).</p>
+</ul>
+<h2>Terastallization</h2>
+<ul>
+<li>Opponents Terastallize only on <b>Hard</b>, and only once you hold all 8 badges (Elite Four, Champion, the family finals). Never on Easy or Normal, never in wild battles. You can still Terastallize yourself on any difficulty. Before this, every boss with smart AI could Tera from the first gym. You receive the <b>Tera Orb</b> with the Rain Badge in Sootopolis; it recharges whenever your Pokémon are healed.</li>
+</ul>
+<h2>Difficulty</h2>
+<ul>
+<li><b>Easy mode</b> added next to Normal and Hard. Easy uses the classic Emerald trainer teams and levels (no grown teams, no held items, vanilla IVs and moves). The family and Elite Four fights run their Normal teams 3 levels lower with no items. No party-size limit, and the level cap can be switched off in EXTRAS at any time. Normal and Hard are unchanged.</li>
+<li><b>Normal softened (2026-09-06)</b> after player feedback. Normal now keeps vanilla trainer levels, vanilla team sizes and vanilla IVs for everyone. Gym leaders keep curated movesets but with their vanilla number of Pokémon, vanilla top level, no held items and the ordinary gym-leader AI instead of the all-knowing one. Hard is still the full Radical Red experience (teams pulled to the cap, six Pokémon, items, 31 IVs, smart AI).</li>
+</ul>
+<h2>New characters (feature branch)</h2>
+<ul>
+<li><b>UNCLE, boss of the FROZEN FLAMINGOS.</b> Team Magma is now the Frozen Flamingos and Uncle replaces Maxie, with original art. Cool, radical, and constitutionally unable to share ("finders keepers" is rule one). He meets you five times and grows each time: 1. Petalburg Woods: Mime Jr., Flamigo. 2. Mt. Chimney: Staryu, Flamigo, Mr. Mime. 3. Flamingo Hideout: Starmie, Koffing, Flamigo, Mr. Mime. 4. Space Center tag battle: Starmie, Weezing, Flamigo. 5. **Final, back on Mt. Chimney after the Sootopolis crisis**: Starmie, Weezing, Flamigo, Vanilluxe, Mr. Mime (his ace). Hard adds items, sets and an extra Pokémon. Losing the tag battle next to Steven is what cracks him; in the final scene he asks what you have that he doesn't, you teach him to share, and he gives you his Vanillite, the first thing he ever caught.</li>
+<li><b>UNC G, boss of ÉQUIPE HORIZON.</b> Team Aqua is now Équipe Horizon, a team that lives for adventure and travelling far and abroad, and UNC G replaces Archie with original art. She is your aunt: DAD's baby sister and UNCLE's sister, so the two villain teams are a family feud. Glamorous, martini in hand, always booking the next trip; wants to wake Kyogre so the sea "goes on forever, every direction a new horizon". Trainer classes: HORIZON (grunts), NAVIGATOR (admins), JETSETTER (boss). Her ace is Jynx, Oricorio is her second favourite, and she wears a different outfit in every battle. Four encounters: 1. Oceanic Museum (Paris outfit): Oricorio (Pom-Pom), Smoochum. 2. Mt. Pyre summit (desert outfit): Pelipper, Oricorio (Sensu), Jynx. 3. Seafloor Cavern (diving suit): Comfey, Gyarados, Oricorio (Baile), Jynx. 4. <b>Final, on the Slateport Harbor dock after the Sootopolis crisis</b> (evening gown): Comfey, Gyarados, Milotic, Oricorio, Jynx. Hard adds Drizzle Pelipper, items and sets. Her arc: she has been everywhere and never once gone home. Beat her at the harbor, tell her what she is missing (a home to come back to, and the family waiting there) and she gives you her Lapras, then invites herself to dinner. All Team Aqua dialogue, the Aqua Hideout map name and the Mt. Chimney / Meteor Falls / Route 128 / Sootopolis cameos were rewritten for the new team.</li>
+<li>Équipe Horizon grunts and admins (Matt, Shelly) wear a rainbow uniform: sky blue bandana, green top, yellow to orange trousers, pink boots, in battle and in the overworld.</li>
+<li><b>The Elite Four are the grandparents.</b> Sidney, Phoebe, Glacia and Drake are replaced with original art, new teams and new dialogue: 1. <b>GRANDPA</b>, military. Defence and awareness: Falinks, Skarmory, Ferrothorn, Mudsdale, Bastiodon, Kingambit (his general). Hazards, Wide Guard, Protect, Body Press. 2. <b>PAPA</b>, nature. Calm gardener who loves animals: Leafeon, Whimsicott, Tangrowth, Venusaur, Meganium, Torterra (the garden he carries). 3. <b>GRAMMY</b>, corporate. CEO who reads your numbers: Porygon2, Persian (Pay Day), Klinklang, Magnezone, Metagross, Porygon-Z. 4. <b>NANNY</b>, Irish, knows all and does not go easy. Ghost/Psychic: Spiritomb, Trevenant, Mismagius, Chandelure, Gardevoir, Hatterene. Her team is Lv 60-64, above the Champion's; she is meant to be the hardest fight in the game. Match-call lines updated. Hard adds items and full sets; Normal is one level lower with no items.</li>
+<li><b>MOM battles you too.</b> She stays home in Littleroot, but talk to her with 2, 5 and 8 badges and she asks for a battle (she heals you first and after). Loves her family and her music; her ace is HUBERT, a Lillipup (never evolved, always the last one out) with Jigglypuff second, and the rest is a singing troupe: Swablu/Altaria, Brionne/Primarina, Toxtricity. Rewards: Lava Cookies, Big Malasadas, Exp. Candy XL. Once UNCLE and UNC G have both been beaten for good and you hold 8 badges, the whole family gathers in your house for the <b>family dinner battle</b>, her real team; win it for an Igglybuff. UNCLE and UNC G stand in the living room afterwards, and from then on they offer a <b>daily double battle</b> (Starmie, Weezing, Mr. Mime with Milotic, Alolan Muk, Jynx) for 3 Rare Candies and a Bottle Cap. In December they show up in holiday outfits.</li>
+<li>UNC G's teams now feature Alolan Muk as her second-best Pokémon (Alolan Grimer at Mt. Pyre).</li>
+<li>Overworld shadows back to vanilla behaviour (only while jumping). The expansion's always-on shadows looked like dark blocks under NPCs.</li>
+<li>Family battle portraits re-cut to vanilla proportions with crisp outlines. Family overworld sprites are now drawn in the game's own pixel style (recoloured Emerald NPC bases), so they match every other NPC on screen.</li>
+<li>UNCLE and DAD each wear a different outfit in every battle (five UNCLE portraits, four DAD portraits).</li>
+<li>Flamingo grunts and admins wear Uncle's colours: pink hoods, coral red jackets, white tracksuit legs, in battle and in the overworld. The Flamingo Emblem icon matches.</li>
+<li><b>DAD</b> replaces Norman with new art and a new voice: supportive, wants you to grow and have fun. Same Petalburg Gym role (fight him after 4 badges), rewritten gym dialogue, and three optional <b>checkpoint battles</b> where he waits on the road to test you: Route 104 (after badge 1), Route 110 (after 3), Route 120 (after 6). Win each once for Exp. Candies; lose or decline and he'll wait. His team is a story: Rookidee (his starter) grows into Corvisquire by Route 110 and Corviknight from the gym battle on, and Lotad, Gastly, Mankey and Phanpy join along the way, evolving when the levels make sense (Ludicolo, Gengar, Primeape, Donphan by the gym rematches). Gentler on Normal difficulty.</li>
+</ul>
+<h2>Champion</h2>
+<ul>
+<li>The Champion depends on your character and each has a story: their starter and first catch travelled the whole way.</li>
+<li>Play as the boy → <b>Emma</b> (Leaf's look). She started with Vanillite and caught a Pikachu on Route 101. Now a snow team: Vanilluxe (Snow Warning, Aurora Veil lead, Lv60), Arctozolt (Slush Rush sweeper), Weavile, Gardevoir, Metagross, and her Raichu ace (Lightning Rod, Nasty Plot, Lv59).</li>
+<li>Play as the girl → <b>Colin</b> (Lance's look), her mirror. Started with Cyndaquil and caught a Riolu. Sun team: Torkoal (Drought lead), Venusaur (Chlorophyll), Garchomp, Hydreigon, Lucario (Swords Dance, Lv59) and his Typhlosion ace (Choice Specs Eruption, Lv60).</li>
+<li>Both run full competitive sets, items and the smart AI. Neither character appears anywhere else in the game.</li>
+<li>Wallace keeps his Sootopolis role; he is no longer the Champion.</li>
+</ul>
+<h2>Trainers</h2>
+<ul>
+<li>848 trainers rebalanced. Levels pulled toward the badge cap (bosses at the cap, others halfway). Bigger teams: gym leaders 4 at gym 1 growing to 6, Elite Four / Champion / Archie / Maxie 6, rival one more than vanilla, grunts 2–3, everyone else 2–4.</li>
+<li>Vanilla Pokémon and their movesets kept; added Pokémon are themed by trainer class (Hikers Rock/Ground, Kindlers Fire, Psychics Psychic...) and gyms/E4 by their dominant type. Strength gated by level.</li>
+<li>Bosses: held items (Eviolite on unevolved, competitive items later), natures and EVs from real base stats, and "Smart Trainer / Ace Pokémon" AI. All trainers have 31 IVs.</li>
+</ul>
+<h2>Difficulty and progression</h2>
+<ul>
+<li><b>Gym Leaders and Elite Four have hand-built teams</b> on both difficulties (same species and moves; Hard adds held items, natures and EV spreads and runs at the badge cap, Normal sits two levels lower with no items). Themed and fair: Roxanne runs Geodude / Rolycoly / Larvitar / Nosepass, Winona six birds with Altaria as ace, Drake ends on Salamence, and so on. Full lists in <code>dev_scripts/trainers/boss_sets.py</code>.</li>
+<li><b>Level cap can be lifted on Normal.</b> After a white-out the Pokémon Center nurse offers to switch it off; it is also a toggle in EXTRAS. Hard keeps the cap always.</li>
+<li>Level cap by badge: 15 / 19 / 24 / 29 / 31 / 33 / 42 / 46, then 58 until Champion. Hard EXP cap. Rare Candies obey it.</li>
+<li>Type icons and move effectiveness always shown in battle.</li>
+<li>Party-wide EXP share from the start.</li>
+</ul>
+<h2>Evolution and items</h2>
+<ul>
+<li>Trade evolutions replaced: Kadabra, Machoke, Graveler (both), Haunter, Boldore, Gurdurr, Phantump, Pumpkaboo at Lv37; Karrablast and Shelmet at Lv35. Held-item trade evolutions (Scizor, Steelix, Kingdra, Porygon2/Z, Rhyperior, Electivire, Magmortar, Dusknoir, Milotic, Slowking, Politoed, Huntail, Gorebyss, Aromatisse, Slurpuff) use the item from the bag. Linking Cord sold as well.</li>
+<li>Reusable TMs.</li>
+<li>Marts by town: modern Poké Balls everywhere; Rustboro/Verdanturf evolution stones; Slateport/Fallarbor/Fortree held evolution items; Mauville/Lavaridge competitive items; Lilycove 3F all 21 Mints, vitamins, Ability Capsule/Patch, Bottle Caps, Exp Candies; Mossdeep, Sootopolis and the League counter carry everything.</li>
+</ul>
+<h2>Field moves without HMs</h2>
+<ul>
+<li>You receive the <b>Field Case</b> key item with your starter (older saves: open EXTRAS once). Register it to SELECT.</li>
+<li>It lists every field move you have unlocked and uses it on the spot with your lead Pokémon as the "user", no move slot needed: Cut, Rock Smash, Strength, Surf, Waterfall, Dive, Fly, Flash, Defog, Sweet Scent, plus one escape move.</li>
+<li>Unlocks follow the badges exactly as before (Cut after badge 1, Flash 2, Rock Smash 3, Strength 4, Surf 5, Fly 6, Dive 7, Waterfall 8). The HM discs still exist if you want the moves in battle.</li>
+<li>Escape move: <b>Dig</b> if your lead Pokémon can learn Dig, otherwise <b>Teleport</b> (works outdoors, back to the last Pokémon Center). Dig works inside caves and buildings that allow Escape Ropes.</li>
+</ul>
+<h2>Interface</h2>
+<ul>
+<li>Summary screen IV/EV page with numbers.</li>
+<li>Move relearner in the summary screen (expansion default).</li>
+<li>Follower Pokémon on. Species that can follow show a <code>+</code> after their name in the starter list and summary screen.</li>
+<li>DexNav unlocked with your starter (or from EXTRAS on older saves). Shows the area's Pokémon for the current time of day. <b>Levels</b>: DexNav Pokémon use the area's normal level range. The ORAS-style 4% chance of a +10 level surprise is gone (that was the Lv13 Bulbasaur on Route 101); chaining still adds up to +5, never above your level cap. <b>Sneaking simplified</b>: once a Pokémon is found, just walk up to it. Running or biking nearby still scares it off; the vanilla hold-A creep step is gone.</li>
+<li>Start menu fits 9 entries.</li>
+</ul>
+<h2>EXTRAS menu (Start → OPTION → EXTRAS)</h2>
+<ul>
+<li>Set the clock.</li>
+<li>100 Rare Candies.</li>
+<li>Max money (¥999,999).</li>
+<li>EXP multiplier: Normal / x2 / x5 / x10 / x100 (persists in the save).</li>
+<li>Perfect IVs toggle: wild and gift Pokémon get 31 IVs. Trainers unaffected.</li>
+<li>Shiny hunting toggle: every wild and gift Pokémon is shiny.</li>
+<li>Reveal full Pokédex: every species marked seen, National Dex unlocked, DexNav shows names.</li>
+<li><b>Story tests (dev)…</b> is now the first EXTRAS row and opens a submenu: UNCLE, DAD, UNC G, MOM, Elite Four (pick GRANDPA, PAPA, GRAMMY or NANNY's room; earlier members count as beaten, Lv58 team), Champion. The cheats and toggles follow it.</li>
+<li>UNCLE test (dev, feature branch): jump straight to any of Uncle's four encounters with a Fire/Steel/Electric counter-team in your empty slots. Walk one step up in Petalburg Woods; talk to Uncle at Mt. Chimney and the Hideout; talk to Steven at the Space Center.</li>
+<li>UNC G test (dev, feature branch): jump to any of UNC G's four encounters with the right badges and an Electric/Steel/Poison counter-team. Talk to Capt. Stern in the museum; walk up at Mt. Pyre summit and in the Seafloor Cavern (that one continues the story to Route 128); talk to UNC G on the harbor dock.</li>
+<li>Debug start (dev): hold R while choosing NEW GAME to skip Birch's speech, the name and gender prompts and the truck questions. You start as a boy named GRAMPS on Littleroot's north path on Normal, no party limit, randomizer off. (mGBA maps R to the S key by default.)</li>
+<li>MOM test (dev): warps home with the right badges and a Fighting/Steel counter-team; talk to MOM.</li>
+<li>DAD test (dev): jump to each checkpoint or the Petalburg Gym with the right badges and a Fighting-type counter-team.</li>
+<li>Champion challenge (test): grants all 8 badges, marks the Elite Four beaten, fills empty party slots with a Lv60 team built to beat either Champion (Blaziken, Excadrill, Swampert, Azumarill, Garchomp, Milotic with competitive sets, 31 IVs), adds Full Restores and Max Revives, heals, and warps you into the Champion's room. Save before pressing it to keep a reusable "base save".</li>
+</ul>
+<h2>Under the hood</h2>
+<ul>
+<li><code>[RR]</code> debug log lines to mGBA's log for time of day, wild encounters, starter, EXTRAS, legendaries. Removed in <code>make release</code>.</li>
+<li>Headless tests for starter eligibility, the Tackle rule and Perfect IVs.</li>
+<li>Generators for wild tables, trainers and legendaries (see README).</li>
+</ul></div>
+<div class="pagenum">126</div>
+<footer>Pokémon Emma's Emerald is a fan-made ROM hack built on pokeemerald-expansion. Requires your own copy of Pokémon Emerald. Not affiliated with Nintendo, Game Freak or The Pokémon Company.</footer>
+</div></div></body></html>

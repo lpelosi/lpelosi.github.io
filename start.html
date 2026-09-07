@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Getting Started · Pokémon Emma's Emerald</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><div class="page">
+<header class="top"><div class="logo">Pokémon<small>EMMA'S EMERALD</small></div><div class="prima"><span>OFFICIAL</span> Strategy Guide</div></header>
+<nav class="tabs"><a href="index.html" class="">Contents</a><a href="start.html" class="cur">Getting Started</a><a href="walkthrough.html" class="">Walkthrough</a><a href="gyms.html" class="">Gym Battles</a><a href="family.html" class="">The Family</a><a href="league.html" class="">Pokémon League</a><a href="legendaries.html" class="">Legendaries</a><a href="features.html" class="">Features</a><a href="changelog.html" class="">Change Log</a></nav>
+<h1 class="sec">Getting Started</h1><div class="prose"><ul>
+<li><b>Difficulty choice</b> right after the skip-intro question (in the moving truck).</li>
+<li><b>Normal</b>: trainers keep their vanilla Pokémon plus a themed extra or two, bosses get a modest level bump and the smart AI. No held items or EV spreads on regular trainers.</li>
+<li><b>Hard</b>: the Radical Red treatment. Levels at the badge cap, full teams, held items, natures/EVs, Ace Pokémon AI.</li>
+<li>Every trainer has both versions; the game picks by your choice. Stored in the save, not changeable later (yet).</li>
+<li><b>Randomizer</b> (asked after difficulty): Off / Wild Pokémon / Wild + trainers. Every species is swapped for a species of similar base stat total, and the swap is fixed per save (Zigzagoon is always the same thing on your file), so routes stay learnable. Legendaries, the Champions Colin/Emma, and scripted static Pokémon are never swapped. Randomized trainer Pokémon use their level-up moves. DexNav and the Pokédex area list still show the original species.</li>
+<li><b>RANDOM / RANDOM+ starters</b> at the top of the type list: RANDOM rolls any eligible starter, RANDOM+ rolls only species that can follow you. Say No at the confirmation to reroll.</li>
+<li><b>Badge-gated party size.</b> Hard mode always: 3 slots to start, +1 per badge (6 after the 3rd badge). Normal mode offers it as an optional challenge: 4 slots, +1 per badge (6 after the 2nd). Extra catches and gifts go to the PC, the PC refuses withdrawals into locked slots, and locked slots read "LOCKED: earn a BADGE" in the party menu.</li>
+<li><b>Skip intro prompt</b> in the moving truck. Yes applies every intro flag (house, clock, met rival) and warps you to Route 101, straight into the Birch rescue and starter choice.</li>
+<li><b>Any-Pokémon starter.</b> Type menu → species menu with live icon preview → confirm. Eligible: every enabled species that is the root of its evolutionary line (Charmander yes, Charizard no; Pichu yes, Pikachu no), including regional root forms (Alolan Vulpix). No megas, Gigantamax, Tera or Totem forms. Legendaries/mythicals/Ultra Beasts/Paradox are offered too (<code>include/config/starter_select.h</code> toggles).</li>
+<li><b>Shiny starter</b> yes/no prompt.</li>
+<li>Starters with no move that can hit a Normal type (Abra, Gastly, Vanillite...) are taught Tackle so the forced Zigzagoon fight is winnable.</li>
+<li>Rival still picks the Hoenn starter that counters your first type.</li>
+<li>Default battle style is SET.</li>
+</ul><h2>Difficulty</h2><ul>
+<li><b>Easy mode</b> added next to Normal and Hard. Easy uses the classic Emerald trainer teams and levels (no grown teams, no held items, vanilla IVs and moves). The family and Elite Four fights run their Normal teams 3 levels lower with no items. No party-size limit, and the level cap can be switched off in EXTRAS at any time. Normal and Hard are unchanged.</li>
+<li><b>Normal softened (2026-09-06)</b> after player feedback. Normal now keeps vanilla trainer levels, vanilla team sizes and vanilla IVs for everyone. Gym leaders keep curated movesets but with their vanilla number of Pokémon, vanilla top level, no held items and the ordinary gym-leader AI instead of the all-knowing one. Hard is still the full Radical Red experience (teams pulled to the cap, six Pokémon, items, 31 IVs, smart AI).</li>
+</ul><h2>EXTRAS menu</h2><ul>
+<li>Set the clock.</li>
+<li>100 Rare Candies.</li>
+<li>Max money (¥999,999).</li>
+<li>EXP multiplier: Normal / x2 / x5 / x10 / x100 (persists in the save).</li>
+<li>Perfect IVs toggle: wild and gift Pokémon get 31 IVs. Trainers unaffected.</li>
+<li>Shiny hunting toggle: every wild and gift Pokémon is shiny.</li>
+<li>Reveal full Pokédex: every species marked seen, National Dex unlocked, DexNav shows names.</li>
+<li><b>Story tests (dev)…</b> is now the first EXTRAS row and opens a submenu: UNCLE, DAD, UNC G, MOM, Elite Four (pick GRANDPA, PAPA, GRAMMY or NANNY's room; earlier members count as beaten, Lv58 team), Champion. The cheats and toggles follow it.</li>
+<li>UNCLE test (dev, feature branch): jump straight to any of Uncle's four encounters with a Fire/Steel/Electric counter-team in your empty slots. Walk one step up in Petalburg Woods; talk to Uncle at Mt. Chimney and the Hideout; talk to Steven at the Space Center.</li>
+<li>UNC G test (dev, feature branch): jump to any of UNC G's four encounters with the right badges and an Electric/Steel/Poison counter-team. Talk to Capt. Stern in the museum; walk up at Mt. Pyre summit and in the Seafloor Cavern (that one continues the story to Route 128); talk to UNC G on the harbor dock.</li>
+<li>Debug start (dev): hold R while choosing NEW GAME to skip Birch's speech, the name and gender prompts and the truck questions. You start as a boy named GRAMPS on Littleroot's north path on Normal, no party limit, randomizer off. (mGBA maps R to the S key by default.)</li>
+<li>MOM test (dev): warps home with the right badges and a Fighting/Steel counter-team; talk to MOM.</li>
+<li>DAD test (dev): jump to each checkpoint or the Petalburg Gym with the right badges and a Fighting-type counter-team.</li>
+<li>Champion challenge (test): grants all 8 badges, marks the Elite Four beaten, fills empty party slots with a Lv60 team built to beat either Champion (Blaziken, Excadrill, Swampert, Azumarill, Garchomp, Milotic with competitive sets, 31 IVs), adds Full Restores and Max Revives, heals, and warps you into the Champion's room. Save before pressing it to keep a reusable "base save".</li>
+</ul></div>
+<div class="pagenum">123</div>
+<footer>Pokémon Emma's Emerald is a fan-made ROM hack built on pokeemerald-expansion. Requires your own copy of Pokémon Emerald. Not affiliated with Nintendo, Game Freak or The Pokémon Company.</footer>
+</div></div></body></html>
