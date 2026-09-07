@@ -27,7 +27,13 @@ h2.sub{font-family:"Arial Black",Impact,sans-serif;font-size:24px;color:var(--bl
 .event{background:#2f77c9;color:#fff}
 .event h3{color:#fff;text-shadow:1px 1px 0 #1d5aa6}
 .event .inner{background:#e9f0fb;color:var(--ink);border-radius:12px;padding:10px 14px;display:flex;gap:14px;align-items:flex-start}
-.event .inner img{image-rendering:pixelated;width:128px;height:128px;flex:none}
+.event .inner img.who{image-rendering:pixelated;width:128px;height:128px;flex:none}
+.event .inner img.thumb{image-rendering:pixelated;width:224px;height:160px;flex:none;border:3px solid #fff;border-radius:8px}
+.event .inner .txt{flex:1}
+.event .panel{margin:10px 0 0}
+.box.caution.small{margin:10px 0 0;font-size:15px}
+.box.caution.small h3{font-size:16px}
+@media(max-width:700px){.event .inner{flex-wrap:wrap}}
 .panel{border-radius:16px;padding:10px 12px 12px;margin:0 0 16px;color:#fff}
 .panel h3{font-family:"Arial Black",Impact,sans-serif;margin:0 0 8px;font-size:20px;letter-spacing:.5px;text-shadow:1px 1px 0 rgba(0,0,0,.35)}
 .panel h3 small{font-family:Arial,Helvetica,sans-serif;font-size:12px;opacity:.9;margin-left:6px;letter-spacing:0}
