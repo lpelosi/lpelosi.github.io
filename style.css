@@ -41,6 +41,8 @@ h2.sub{font-family:"Arial Black",Impact,sans-serif;font-size:24px;color:var(--bl
 .panel td{background:rgba(255,255,255,.92);color:var(--ink);padding:3px 8px;font-size:15px;vertical-align:middle}
 .panel tr td:first-child{border-radius:10px 0 0 10px}.panel tr td:last-child{border-radius:0 10px 10px 0}
 .trainers{background:var(--blue)}
+.legend{background:#7a4fb5}
+.legend .note{font-family:Arial,Helvetica,sans-serif;font-size:12px;margin:6px 0 0;opacity:.95}
 .items{background:var(--blue)}
 .catch{background:var(--yellow)}
 .catch h3{color:#fff;-webkit-text-stroke:1px #c98f00;text-shadow:1px 1px 0 #c98f00}
@@ -72,7 +74,7 @@ figure.map img{display:block;max-width:100%;height:auto;image-rendering:pixelate
 .type{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:bold;color:#fff;padding:1px 6px;border-radius:8px;margin-left:4px;vertical-align:middle;text-shadow:0 1px 0 rgba(0,0,0,.3);letter-spacing:.3px}
 .t-normal{background:#a8a878}.t-fighting{background:#c03028}.t-flying{background:#a890f0}.t-poison{background:#a040a0}.t-ground{background:#e0c068;color:#333;text-shadow:none}.t-rock{background:#b8a038}.t-bug{background:#a8b820}.t-ghost{background:#705898}.t-steel{background:#b8b8d0;color:#333;text-shadow:none}.t-fire{background:#f08030}.t-water{background:#6890f0}.t-grass{background:#78c850}.t-electric{background:#f8d030;color:#333;text-shadow:none}.t-psychic{background:#f85888}.t-ice{background:#98d8d8;color:#333;text-shadow:none}.t-dragon{background:#7038f8}.t-dark{background:#705848}.t-fairy{background:#ee99ac;color:#333;text-shadow:none}.t-stellar{background:#40b5a5}
 .team{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}
-.mon{background:#fff;border:2px solid var(--blue);border-radius:10px;padding:4px 6px;width:118px;text-align:center;font-family:Arial,Helvetica,sans-serif}
+.mon{background:#fff;color:var(--ink);border:2px solid var(--blue);border-radius:10px;padding:4px 6px;width:118px;text-align:center;font-family:Arial,Helvetica,sans-serif}
 .mon img{image-rendering:pixelated;width:64px;height:64px;display:block;margin:0 auto}
 .mon .nosprite{height:64px}
 .mon .mn{font-weight:bold;font-size:12px;line-height:1.1}.mon .mn small{font-weight:normal;font-size:10px}
