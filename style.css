@@ -72,6 +72,7 @@ figure.map{margin:12px 0;background:var(--blue);border-radius:14px;padding:6px;d
 figure.map img{display:block;max-width:100%;height:auto;image-rendering:pixelated;border-radius:8px}
 .char{display:grid;grid-template-columns:200px 1fr;gap:18px;align-items:start;margin:14px 0 26px}
 .char img{image-rendering:pixelated;width:192px;height:192px;background:#fff;border-radius:14px;border:3px solid var(--blue)}
+.char .pics{display:flex;flex-direction:column;gap:8px}
 .char .facts{background:#fff;border-radius:12px;padding:8px 12px;border:2px solid var(--gold);font-family:Arial,Helvetica,sans-serif;font-size:14px}
 .char .facts b{color:var(--blue-d)}
 @media(max-width:700px){.char{grid-template-columns:1fr}}
