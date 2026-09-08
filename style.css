@@ -96,6 +96,7 @@ figure.map img{display:block;max-width:100%;height:auto;image-rendering:pixelate
 .boss img.big{image-rendering:pixelated;width:192px;height:192px}
 @media(max-width:700px){.boss{grid-template-columns:1fr}}
 .prose p{margin:8px 0}.prose li{margin:4px 0}
+.prose figure.shot{margin:12px 0 18px;display:inline-block;background:#fff;border:3px solid var(--gold);border-radius:8px;padding:6px}.prose figure.shot img{image-rendering:pixelated;display:block;max-width:100%;width:478px}.prose figure.shot figcaption{font-size:14px;color:var(--ink);padding-top:6px;text-align:center;font-weight:bold}
 .prose h2{font-family:"Arial Black",Impact,sans-serif;color:var(--blue);border-bottom:3px solid var(--gold);display:inline-block;padding-right:30px;margin-top:22px}
 .prose table{border-collapse:collapse;margin:8px 0;font-size:15px}.prose th,.prose td{border:1px solid #d8c88a;padding:4px 8px;background:#fff}
 .prose th{background:var(--yellow)}
