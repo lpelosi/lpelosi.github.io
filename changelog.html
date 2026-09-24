@@ -29,6 +29,7 @@
 </ul>
 <h2>Legendaries</h2>
 <ul>
+<li>17 legendaries (Marshadow, Manaphy, Raikou, Tapu Koko, Tapu Bulu, Koraidon, Calyrex, Volcanion, Melmetal, Solgaleo, Terrakion, Uxie, Keldeo, Walking Wake, Thundurus, Phione, Naganadel) stood on ocean water because the placer mistook the ocean tile for a puddle. They now stand on dry land; the guide maps and the dev warps follow.</li>
 <li>112 static encounters added (see LEGENDARIES.md), one unlock tier per badge so you can actually use them in the story, with a catch-rate floor per tier so the Balls you own at that point work (200 at 1 badge down to 30 at 8 badges; Champion-tier keeps the real rates): 1 badge Lv8-12: Mew (Petalburg Woods), Phione, Cosmog, Meltan, Poipole · 2 badges Lv20: Kubfu, Type: Null, Shaymin, Diancie, Meloetta · 3 badges Lv27: Jirachi, Victini, Celebi, Zeraora, Magearna, Keldeo · 4 badges Lv30: Entei, Moltres, Uxie, Azelf, Enamorus, Tornadus, Ting-Lu, Chi-Yu · 5 badges Lv33: Zapdos, Thundurus, Raikou, Suicune, Mesprit, Tapu Koko · 6 badges Lv40: Virizion, Landorus, Tapu Lele, Tapu Bulu, Ogerpon, Cresselia, Heatran, Wo-Chien · 7 badges Lv45: Articuno, Glastrier, Chien-Pao, Spectrier, Regigigas, Tapu Fini, Okidogi, Munkidori · 8 badges Lv55: the Ultra Beasts, the Paradox Pokémon, Cobalion, Terrakion, Silvally, Urshifu, Fezandipiti, Regieleki, Regidrago · Champion Lv65-70: box legendaries and the big mythicals.</li>
 <li>Faraway Island's hide-and-seek Pokémon is Zarude (Lv65) instead of Mew.</li>
 <li>Walk up and press A. Caught = removed permanently. Fainted or fled = flies away and returns when you re-enter the map.</li>
@@ -45,6 +46,8 @@
 <li><b>Easy catch</b> toggle in EXTRAS: every wild Pokémon has a catch rate of 255 (Magikarp odds), legendaries included.</li>
 <li><b>Auto-run</b> toggle in EXTRAS: run by default, hold B to walk. Works before you get the Running Shoes.</li>
 <li><b>DexNav</b>: running or biking near your target no longer ends the search.</li>
+<li><b>DexNav in caves and on water</b> fixed: the target no longer "gets away" the moment you step next to it. Cave and water Pokémon hop to a nearby tile up to twice (as designed), and stay put when there is nowhere to hop. Searching also works in a Flash cave once you have used Flash (it used to say "too dark" even with the cave lit). You now have 60 seconds to reach a found Pokémon instead of 15.</li>
+<li><b>DexNav targets are always reachable</b>: the search only picks tiles you can walk (or surf) to from where you stand, so no more Pokémon on the ledge above or across a pond, and the search area is centred on you instead of skewed up and to the left.</li>
 <li><b>Move Relearner everywhere</b>: open a Pokémon's summary, Moves page, and relearn any level-up move (including pre-evolution moves), egg move or TM move it can learn. No Heart Scales, no trip to Fallarbor. Natures and abilities change with Mints and Ability Capsules/Patches sold in marts.</li>
 <li><b>Faster battles</b>: the trainer slide-in at the start of a battle is skipped. <b>Instant text is on by default</b> for new games (toggle in EXTRAS; older saves can switch it on there). Text speed defaults to Fast, and the expansion's extra intro splash is gone, so the title screen comes up sooner.</li>
 <li><b>Retry after a loss</b>: after the nurse heals you following a white-out, she offers to send you straight back to the spot where the lost trainer battle began.</li>
@@ -135,6 +138,10 @@
 <li><b>Fly unlocks with the 2nd badge</b> (Knuckle Badge) instead of the 6th, through the Field Case. Going home to MOM and back is a short trip.</li>
 <li>You receive the <b>Field Case</b> key item with your starter (older saves: open EXTRAS once). Register it to SELECT.</li>
 <li>It lists every field move you have unlocked and uses it on the spot with your lead Pokémon as the "user", no move slot needed: Cut, Rock Smash, Strength, Surf, Waterfall, Dive, Fly, Flash, Defog, Sweet Scent, plus one escape move.</li>
+<li><b>Press A</b> on a cuttable tree, a Strength boulder, a breakable rock, the water's edge, a waterfall or a dive spot (and a secret-base indent) and the usual prompt appears with your lead Pokémon as the user, even if nobody in the party knows the move. You only need the badge that unlocks it and the Field Case in your bag. When the case stands in, the water prompts say so ("SURF with the FIELD CASE?", "MEWTWO used SURF with the FIELD CASE!").</li>
+<li><b>Auto-Flash</b>: with the Knuckle Badge and the Field Case, a dark cave is lit the moment you walk in. FLASH stays in the case for Registeel's tomb.</li>
+<li>The Field Case is <b>registered to SELECT</b> when you receive it (older saves: on the next EXTRAS visit), unless you had already registered something else.</li>
+<li>The Field Case now says why a move can't be used where you stand (FLY needs the outdoors, SURF the water's edge, DIVE a dark patch of deep water, and so on) instead of a flat "can't be used here".</li>
 <li>Unlocks follow the badges exactly as before (Cut after badge 1, Flash 2, Rock Smash 3, Strength 4, Surf 5, Fly 6, Dive 7, Waterfall 8). The HM discs still exist if you want the moves in battle.</li>
 <li>Escape move: <b>Dig</b> if your lead Pokémon can learn Dig, otherwise <b>Teleport</b> (works outdoors, back to the last Pokémon Center). Dig works inside caves and buildings that allow Escape Ropes.</li>
 </ul>
