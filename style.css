@@ -109,3 +109,33 @@ figure.map img{display:block;max-width:100%;height:auto;image-rendering:pixelate
 .prose table{border-collapse:collapse;margin:8px 0;font-size:15px}.prose th,.prose td{border:1px solid #d8c88a;padding:4px 8px;background:#fff}
 .prose th{background:var(--yellow)}
 footer{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#555;margin-top:20px;text-align:center}
+
+.dexhead{display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:start;margin:8px 0 16px}
+.dexhead img{image-rendering:pixelated;width:128px;height:128px;background:#fff;border-radius:14px;border:3px solid var(--blue)}
+.dexhead .num{font-family:Arial,Helvetica,sans-serif;font-weight:bold;color:var(--orange);font-size:14px}
+.dexhead .cat{font-style:italic;color:#555}
+.tbadge{display:inline-block;color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:11px;padding:2px 8px;border-radius:9px;margin-right:4px;text-shadow:1px 1px 0 rgba(0,0,0,.35);text-transform:uppercase;letter-spacing:.5px}
+.facts{background:#fff;border-radius:12px;padding:8px 12px;border:2px solid var(--gold);font-family:Arial,Helvetica,sans-serif;font-size:14px;margin:8px 0}
+.facts b{color:var(--blue-d)}
+.stats{width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+.stats td{padding:2px 6px}.stats td.n{text-align:right;width:36px;font-weight:bold}
+.stats .bar{background:#eee;border-radius:6px;height:10px;width:100%}.stats .bar span{display:block;height:10px;border-radius:6px;background:var(--orange)}
+.evo{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:6px 0}
+.evo .mon{background:#fff;border:2px solid var(--blue);border-radius:12px;padding:4px 8px;text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+.evo .mon img{image-rendering:pixelated;width:64px;height:64px;display:block;margin:0 auto}
+.evo .mon.cur{border-color:var(--orange);background:#fff4e6}
+.evo .how{font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444;max-width:130px;text-align:center}
+.evo .how:before{content:"➜";display:block;color:var(--orange);font-size:18px}
+.evo ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.moves{width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13px;margin-bottom:12px}
+.moves th{background:var(--yellow);text-align:left;padding:3px 6px}.moves td{padding:2px 6px;border-bottom:1px solid #eee}
+.moves td.r{text-align:right}
+.where{width:100%;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13px}
+.where td{padding:3px 6px;border-bottom:1px solid #eee;vertical-align:middle}
+.dexgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin:10px 0 20px}
+.dcard{display:block;background:#fff;border:2px solid var(--blue);border-radius:12px;padding:6px;text-align:center;text-decoration:none;color:var(--ink)}
+.dcard img{image-rendering:pixelated;width:64px;height:64px}
+.dcard .n{font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:12px}.dcard .d{font-family:Arial,Helvetica,sans-serif;font-size:11px;color:var(--orange);font-weight:bold}
+.dexfilter{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px;font-family:Arial,Helvetica,sans-serif}
+.dexfilter input,.dexfilter select{font-size:15px;padding:6px 10px;border:2px solid var(--blue);border-radius:10px}
+.dexfilter input{flex:1;min-width:200px}
